@@ -1,0 +1,86 @@
+.navbar {
+  background-color: #dff0d8;
+  display: flex;
+  justify-content: center; 
+}
+
+.nav-item{
+  padding: 0px 10px;  
+}
+
+.nav-item .nav-link:hover {
+  background-color: #9ad881;
+  color: red !important; 
+  text-transform: uppercase;
+  border-radius: 5px; 
+  font-weight: bold;   
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block; 
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 20px; 
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #9ad881;
+  color: red !important; 
+  text-transform: uppercase;
+  border-radius: 5px; 
+  font-weight: bold;
+}
+
+.btn-outline-success {
+  display: none;
+}
+
+.form-control {
+  background: url("../img/search.svg") no-repeat right 10px center; /* Add your search icon path */
+  background-size: 20px; 
+  padding-right: 30px; 
+}
+
+#page-heading {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+#page-heading h2 {
+    font-size: 35px;
+    font-weight: bold;
+    transform: uppercase;
+}
+
+.footer-links a {
+    display: block;
+    margin: 5px 0px; 
+    font-weight: bold;
+}
+
+footer>.row>.col-md-8{
+    background-color: #f1eded;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px; 
+    height: 50px;
+    background-color: #a02525; 
+    color: white; 
+    border: none; 
+    border-radius: 0; 
+    cursor: pointer; 
+}
+  
+#scrollToTopBtn::after {
+    content: "^";
+    font-size: 30px; 
+}

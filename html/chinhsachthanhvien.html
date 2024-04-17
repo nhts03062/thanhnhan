@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chinhsachthanhvien.css">
+    <script src="../js/scrollToTop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../css/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Chính sách thành viên</title>
+</head>
+<body>
+
+    <header class="header fixed">
+        <div class="main-content">
+            <div class="body">
+                <div class="head-top">
+                    <div class="khoi-logo">
+                        <label for="menu-checkbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="menu-header_icon">
+                                <path fill="currentColor"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg></label>
+
+                        <!-- <div class="info-logo"> <p><a href="#!">HVH Drinks</a></p></div> -->
+                        <div class="logo"><a href="#!"><img src="../img/logo.png" alt="HVH Drinks" class="img-logo"></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" name="search" placeholder="Tìm kiếm">
+                        <a href="#!" class="icon-timkiem"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #cca336;"></i></a>
+                    </div>
+                    <div class="login">
+                        <h1><a href="#!" style="color: #cca336;">Đăng nhập</a></h1>
+                        <button class="btn"><span>Giỏ hàng</span> <a href="../html/Cart.html"><i class="fa-solid fa-cart-shopping"
+                                    style="color: #1e4b24;"></i></a></button>
+                        <div class="toggle-switch">
+                            <label for="switch" style="width: 100px;">
+                                <input type="checkbox" name="switch" id="switch" hidden>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="head-bottom">
+                    <ul id="navbar_list--pc">
+                        <li>
+                            <a href="../html/home.html">Trang chủ</a>
+                        </li>
+                        <li class="drop-menu">
+                            <a href="#!">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li style="width: 100%;">
+                                    <a href="../html/thucuong.html">Bàn</a>
+                                </li>
+                                <li style="width: 120px;" >
+                                    <a href="#!">Ghế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Tin tức & Sự kiện </a>
+                        </li>
+                        <li>
+                            <a href="#!">Tuyển dụng</a>
+                        </li>
+                        <li>
+                            <a href="../html/gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="../html/chinhsachthanhvien.html">Thẻ thành viên</a>
+                        </li>
+                        <li>
+                            <a href="../html/Contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-header">
+        <!-- table/mobile menu -->
+        <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <div class="menu-drawer">
+            <div class="menu-drawer_top">
+                <div> <a href="../html/home.html"><img src="../img/logo.png" alt="HVH Drinks" class="menu-drawer_logo"
+                            style="width: 60px; height: 60px;"></a></div>
+                <label for="menu-checkbox"><svg class="close_menu" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                    </svg></label>
+            </div>
+            <!-- nav mobile -->
+            <ul id="navbar_list--mobile"></ul>
+            <script>
+                const navPC = document.querySelector("#navbar_list--pc")
+                const navMobile = document.querySelector("#navbar_list--mobile")
+                navMobile.innerHTML = navPC.innerHTML
+            </script>
+            <div class="separate">
+
+            </div>
+            <div class="show-on-mobile">
+                <h1><a href="../html/Signup.html" style="color: #cca336;">Đăng nhập</a></h1>
+                <button class="btn"><span>Giỏ hàng</span> <a href="#!"><i class="fa-solid fa-cart-shopping"
+                            style="color: #1e4b24;"></i></a></button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="page-heading" class="text-dark px-5" style="background-image: url(../img/Banner-Tinh-Túy-Trà22.jpg);">
+        <div class="container">
+            <h2>CHÍNH SÁCH THÀNH VIÊN</h2>
+        </div>
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background: #b91f32; color: #FFF;">
+            <li class="breadcrumb-item">
+                <a href="" class="text-white" style="text-decoration: none;">
+                    <i class="fas fa-home"></i> Trang Chủ
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Chính sách thành viên
+            </li>
+        </ol>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>CHÍNH SÁCH THÀNH VIÊN ỨNG DỤNG CỬA HÀNG NỘI THẤT IUH</h2>
+            <h3>A. ĐIỂM TÍCH LŨY</h3>
+            <p>
+                Chương trình tích điểm thành viên CỬA HÀNG NỘI THẤT IUH cho phép bạn tích điểm và chủ động đổi điểm để lấy những ưu đãi, phần quà hấp dẫn từ HVH Drinks. Với mỗi hóa đơn chi tiêu tại cửa hàng, bạn sẽ được tích điểm tương đương với số tiền mà bạn đã thanh toán.
+            </p>
+            <p>Ứng dụng sẽ ghi nhận đồng thời 02 loại điểm, gồm: 
+                <ol>
+                    <li>Điểm xét hạng: Dùng xét hạng thành viên. Quy cách tính điểm: 100,000 vnđ = 1 điểm.</li>
+                    <li>Điểm đổi quà: Dùng đổi điểm lấy quà. Quy cách tính điểm: theo bảng bên dưới: 
+                    </li>
+                </ol>
+            </p>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Hạng</th>
+                        <th scope="col">Hệ số</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>E - Member</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Red - Member</td>
+                        <td>1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Gold - Member</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td style=" font-style: italic;"><strong>Lưu ý:</strong> Boba đổi quà được nhân hệ số theo hạng thành viên tương ứng</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Bạn có thể chủ động kiểm tra điểm tích lũy tại mục “Hạng thành viên”  hoặc “Boba đổi quà” để biết chính xác số Lá trà hoặc Boba bạn đã tích lũy được và Quyền lợi thành viên mà bạn đang có.</p>
+            <p>Để hiểu rõ hơn về các loại điểm tích lũy trên ứng dụng, bạn vui lòng tham khảo nội dung bên dưới:</p>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Đặc điểm</th>
+                        <th scope="col">Điểm xét hạng</th>
+                        <th scope="col">Voucher đổi quà</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td>E-Member</td>
+                            <td>1.000.000 vnđ</td>
+                            <td>10 điểm</td>
+                            <td>1 Voucher</td>
+                        </tr>
+                        <tr>
+                            <td>Red-Member</td>
+                            <td>5.000.000 vnđ</td>
+                            <td>50 điểm</td>
+                            <td>6 Voucher</td>
+                        </tr>
+                        <tr>
+                            <td>Gold-Member</td>
+                            <td>10.000.000 vnđ</td>
+                            <td>100 điểm</td>
+                            <td>12 Voucher</td>
+                        </tr>
+                </tbody>
+            </table>
+
+            <p>Bạn có thể chủ động kiểm tra điểm tích lũy tại mục <strong><em>“Hạng thành viên”</em></strong>&nbsp; hoặc <strong><em>“Boba đổi quà”</em></strong> để biết chính xác số Lá trà hoặc Boba bạn đã tích lũy được và Quyền lợi thành viên mà bạn đang có.</p>
+
+            <p>Để hiểu rõ hơn về các loại điểm tích lũy trên ứng dụng, bạn vui lòng tham khảo nội dung bên dưới: </p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><b>Đặc điểm</b></p>
+                        </td>
+                        <td>
+                            <p><b>Điểm xét hạng</b></p>
+                        </td>
+                        <td>
+                            <p><b>Boba đổi quà</b></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">
+                            <p><span style="font-weight: 400;">Khác nhau</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Đơn vị tính: Điểm</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Đơn vị tính: Voucher</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span style="font-weight: 400;">Không nhận hệ số theo hạng thành viên</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Được nhân hệ số theo hạng thành viên</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span style="font-weight: 400;">Tự động reset theo chu kỳ 365 ngày</span></p>
+                            <p><span style="font-weight: 400;">kể từ ngày nâng/hạ hạng thành viên</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Tự động reset về 0 điểm </span></p>
+                            <p><span style="font-weight: 400;">vào lúc 0:00, ngày 1/1 hàng năm</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span style="font-weight: 400;">Quy cách tính điểm: </span><b><i>100,000đ = 1 Điểm</i></b></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Quy cách tính điểm: </span></p>
+                            <p><span style="font-weight: 400;">linh động tùy theo CTKM từng thời điểm</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <p><span style="font-weight: 400;">Giống nhau</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Trong </span><b><i>12 tháng</i></b><span style="font-weight: 400;"> các tài khoản không phát sinh chi tiêu sẽ bị reset Điểm xét hạng về 0 điểm. Hạ hạng thành viên về E-Member</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Trong </span><b><i>12 tháng</i></b><span style="font-weight: 400;"> các tài khoản không phát sinh chi tiêu sẽ bị reset Boba đổi quà về 0 điểm. Hạ hạng thành viên về E-Member</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span style="font-weight: 400;">Được cộng dồn khi tích lũy</span></p>
+                        </td>
+                        <td>
+                            <p><span style="font-weight: 400;">Được cộng dồn khi tích lũy</span></p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                
+                <h2>B. HẠNG THÀNH VIÊN VÀ QUYỀN LỢI THÀNH VIÊN</h2>
+                
+                
+                
+                <p>Ứng dụng có ba hạng mức thành viên với các mức quyền lợi khác nhau. Hạng thành viên được xác định theo số tiền chi tiêu của khách tại hệ thống cửa hàng:&nbsp;</p>
+                
+                
+                <table class="table table-bordered"><tbody><tr><td><strong>Hạng</strong></td><td><strong>Điều kiện tích điểm</strong></td><td><strong>
+                    Quyền lợi thành viên</strong></td></tr><tr><td><strong>E &#8211; Member</strong></td><td>Lần đầu đăng kí thành viên trên 
+                        ứng dụng, bạn sẽ là thành viênE – Member.</td><td>Nhận voucher miễn phí 1 bộ ấm chén bằng sứ.
+                     Ưu đãi áp dụng cho hội viên tích lũy tối thiểu 100 Điểm (tương đương chi tiêu 1.000.000 vnđ) trong tài khoản;<br>
+                     Tích lũy Boba để đổi các phần quà hấp dẫn đến từ HVH Drinks;</td></tr><tr><td><strong>Red – Member</strong></td><td>
+                        Khi tích đủ <strong>500 lá trà</strong> <strong>(tương đương chi tiêu 5.000.000 vnđ), </strong>
+                        bạn sẽ được nâng hạng thành viên thành Red – Member.</td><td>
+                            Nhận voucher miễn phí 1 bộ ấm chén bằng sứ.
+                             Ưu đãi áp dụng cho hội viên tích lũy tối thiểu 100 lá trà (tương đương chi tiêu 1.000.000 vnđ) 
+                             trong tài khoản;<br>Tích lũy Voucher để đổi các phần quà hấp dẫn đến từ CỬA HÀNG NỘI THẤT IUH; Điểm được nhân hệ số 
+                             <strong>1,2</strong> khi tích điểm;<br>Các ưu đãi hấp dẫn khác chỉ dành riêng cho hạng Red – Member. 
+                             (Theo chính sách của HVH Drinks Việt Nam, khách hàng có thể nhận thêm những ưu đãi hoặc quà tặng vào những dịp 
+                             đặc biệt như Lễ, Tết…)</td></tr><tr><td><strong>Gold – Member</strong></td><td>Khi tích đủ <strong>100 Điểm (tương 
+                                đương chi tiêu 10.000.000 vnđ),</strong> bạn sẽ được nâng hạng thành viên thành Gold – Member.</td><td>
+                                    Nhận voucher miễn phí một bộ ấm chén bằng sứ. Ưu đãi chỉ áp dụng cho hội viên tích lũy tối thiểu 100 Điểm
+                                     (tương đương chi tiêu 1.000.000 vnđ) trong tài khoản;<br>Tích lũy Boba để đổi các phần quà hấp dẫn đến từ CỬA HÀNG NỘI THẤT IUH 
+                                     ; Điểm Boba được nhân hệ số <strong>1,5</strong> 
+                                     khi tích điểm;<br>Đặc quyền thưởng thức sản phẩm mới miễn phí;<br>Các ưu đãi hấp dẫn khác chỉ dành riêng cho hạng Gold 
+                                     &#8211; Member. (Theo chính sách của CỬA HÀNG NỘI THẤT IUH, khách hàng có thể nhận thêm những ưu đãi hoặc quà tặng vào 
+                                     những dịp đặc biệt như Lễ, Tết…)</td></tr></tbody></table>
+                
+                
+                <h2>C. QUY TẮC XÉT HẠNG THÀNH VIÊN </h2>
+                
+                
+                
+                <p>Hệ thống tự động xét điểm và hạng thành viên theo <strong><em>chu kỳ 365 ngày</em></strong> kể tự ngày xét hạng. Sau quá trình tích lũy điểm, bạn sẽ được nâng hạng thành viên với nhiều ưu đãi đặc biệt hơn tương ứng với từng hạng đạt được.</p>
+                
+                
+                
+                <p>Nếu bạn không tích lũy đủ điểm theo quy định, hệ thống sẽ xét hạng theo bảng quy tắc sau:&nbsp;</p>
+                
+                
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td><strong>Hạng</strong></td>
+                            <td><strong>Red-Member</strong></td>
+                            <td><strong>Gold-Member</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nâng hạng</strong></td>
+                            <td>Từ E-Member lên Red-Member: Tích đủ <strong>50</strong> Điểm <em>(Tương đương 5.000.000 vnđ)</em></td>
+                            <td>Từ E-Member lên Gold-Member: Tích đủ <strong>100</strong> Điểm <em>(Tương đương 10.000.000 vnđ)</em><br />Từ Red-Member lên Gold-Member: Tích đủ <strong>100</strong> Điểm <em>(Tương đương 10.000.000 vnđ)</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Giữ hạng</strong></td>
+                            <td>Trong 365 ngày, tính từ thời điểm lên hạng Red-Member: Tích đủ <strong>500</strong> lá trà <em>(Tương đương chi tiêu từ 5.000.000 vnđ)</em></td>
+                            <td>Trong 365 ngày, tính từ thời điểm lên hạng Gold-Member: Tích đủ <strong>1000</strong> lá trà <em>(Tương đương chi tiêu 10.000.000 vnđ) </em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hạ hạng</strong></td>
+                            <td>Trong 365 ngày, tính từ thời điểm lên hạng Red-Member: Tích dưới <strong>500</strong> lá trà<em>(Tương đương dưới 5.000.000 vnđ)</em><br />Hạ hạng xuống 1 bậc thấp hơn là E-Member</td>
+                            <td>Trong 365 ngày, tính từ thời điểm lên hạng Gold-Member: Tích dưới <strong>1000</strong> lá trà<em>(Tương đương dưới 10.000.000 vnđ)</em><br />Hạ hạng xuống 1 bậc thấp hơn là Red-Member</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>Hạng thành viên sẽ thay đổi theo số lá trà mà bạn tích lũy cho đến ngày xét hạng, mỗi tài khoản sẽ có ngày xét hạng khách nhau, theo quy tắc 365 ngày kể từ ngày nâng/hạ hạng thành viên; Nếu bạn không tích lũy thêm lá trà nào, hạng thành viên của bạn sẽ quay trở về hạng thấp nhất là E-Member. Sau khi bị hạ hạng, bạn vẫn có thể tiếp tục tích lũy điểm để được nâng hạng như bình thường.</p>               
+                <h2>D. THAY ĐỔI THÔNG TIN THÀNH VIÊN TRÊN ỨNG DỤNG</h2>               
+                <p>Với các thông tin bắt buộc cung cấp nhưng không thể tự thay đổi trên ứng dụng như ngày tháng năm sinh, bạn vui lòng liên hệ đến&nbsp;Hotline CỬA HÀNG NỘI THẤT IUH:&nbsp;0123456789&nbsp;hoặc gửi tin nhắn đến&nbsp;Fanpage CỬA HÀNG NỘI THẤT IUH&nbsp;để được hỗ trợ.&nbsp;</p>
+                <p><em>Công ty TNHH CỬA HÀNG NỘI THẤT IUH có quyền thay đổi hay sửa chữa các điều khoản liên quan đến chương trình thành viên mà không cần báo trước. Mọi thay đổi sẽ được thông báo chính thức trên website: <a href="">chntiuh.com.vn</a>.</em></p>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-4 text-white bg-dark">
+                <h3 class="my-3">CỬA HÀNG NỘI THẤT IUH</h3>
+                <p>COPYRIGHT © 2024 CỬA HÀNG NỘI THẤT IUH</p>
+            </div>
+            <div class="col-md-8 text-black">
+                <div class="d-flex justify-content-center footer-links">
+                    <a href="#" class="text-dark mx-2">Giới Thiệu</a>
+                    <a href="#" class="text-dark mx-2">Tin Tức & Ưu Đãi</a>
+                    <a href="#" class="text-dark mx-2">Sản Phẩm</a>
+                    <a href="#" class="text-dark mx-2">Cửa Hàng</a>
+                    <a href="#" class="text-dark mx-2">Tuyển Dụng</a>
+                    <a href="#" class="text-dark mx-2">Liên Hệ</a>
+                </div>
+                <a href="#" class="text-danger my-4">📧 info@chntiuh.com.vn</a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" class="btn" onclick="scrollToTop()"></button>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+.navbar {
+    background-color: #dff0d8;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-item{
+    padding: 0px 10px;  
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #9ad881;
+    color: red !important; 
+    text-transform: uppercase;
+    border-radius: 5px; 
+    font-weight: bold;   
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px; 
+}
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #9ad881;
+    color: red !important; 
+    text-transform: uppercase;
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    display: none;
+}
+
+.form-control {
+    background: url("../img/search.svg") no-repeat right 10px center; /* Add your search icon path */
+    background-size: 20px; 
+    padding-right: 30px; 
+}
+
+
+
+#page-heading {
+    background-image: url(../img/img_heading.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    padding: 100px; 
+}
+
+#page-heading h2 {
+    font-size: 35px;
+    font-weight: bold;
+    transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.nav-link.category {
+    color: gray; 
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+.nav-link.category:hover,
+.nav-link.category:focus {
+    color: #198754; 
+    border-top: 1px solid #198754;
+    border-bottom: 1px solid #198754;
+    border-radius: 0px;
+}
+
+.card {
+    margin-bottom: 20px; 
+    
+}
+
+.btn-order {
+    border: 1px solid #5cb85c;
+    border-radius: 5px;
+    background-color: white ;
+    color: darkgray;;
+}
+
+.btn-order:hover,
+.btn-order:focus {
+    background-color: #5cb85c;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.footer-links a {
+    display: block;
+    margin: 5px 0px; 
+    font-weight: bold;
+}
+
+footer>.row>.col-md-8{
+    background-color: #f1eded;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px; 
+    height: 50px;
+    background-color: #a02525; 
+    color: white; 
+    border: none; 
+    border-radius: 0; 
+    cursor: pointer; 
+}
+  
+#scrollToTopBtn::after {
+    content: "^";
+    font-size: 30px; 
+}
+

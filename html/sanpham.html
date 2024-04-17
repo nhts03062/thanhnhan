@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/thucuong.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="../js/scrollToTop.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../css/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Nội Thất</title>
+</head>
+<body>
+    <header class="header fixed">
+        <div class="main-content">
+            <div class="body">
+                <div class="head-top">
+                    <div class="khoi-logo">
+                        <label for="menu-checkbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="menu-header_icon">
+                                <path fill="currentColor"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg></label>
+
+                        <!-- <div class="info-logo"> <p><a href="#!">HVH Drinks</a></p></div> -->
+                        <div class="logo"><a href="#!"><img src="../img/logo.png" alt="HVH Drinks" class="img-logo"></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" name="search" placeholder="Tìm kiếm">
+                        <a href="#!" class="icon-timkiem"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #cca336;"></i></a>
+                    </div>
+                    <div class="login">
+                        <h1><a href="#!" style="color: #cca336;">Đăng nhập</a></h1>
+                        <button class="btn"><span>Giỏ hàng</span> <a href="../html/Cart.html"><i class="fa-solid fa-cart-shopping"
+                                    style="color: #1e4b24;"></i></a></button>
+                        <div class="toggle-switch">
+                            <label for="switch" style="width: 100px;">
+                                <input type="checkbox" name="switch" id="switch" hidden>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="head-bottom">
+                    <ul id="navbar_list--pc">
+                        <li>
+                            <a href="../html/home.html">Trang chủ</a>
+                        </li>
+                        <li class="drop-menu">
+                            <a href="#!">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li style="width: 100%;">
+                                    <a href="../html/thucuong.html">Bàn</a>
+                                </li>
+                                <li style="width: 120px;" >
+                                    <a href="#!">Ghế</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Tin tức & Sự kiện </a>
+                        </li>
+                        <li>
+                            <a href="#!">Tuyển dụng</a>
+                        </li>
+                        <li>
+                            <a href="../html/gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="../html/chinhsachthanhvien.html">Thẻ thành viên</a>
+                        </li>
+                        <li>
+                            <a href="../html/Contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-header">
+        <!-- table/mobile menu -->
+        <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <div class="menu-drawer">
+            <div class="menu-drawer_top">
+                <div> <a href="../html/home.html"><img src="../img/logo.png" alt="HVH Drinks" class="menu-drawer_logo"
+                            style="width: 60px; height: 60px;"></a></div>
+                <label for="menu-checkbox"><svg class="close_menu" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                    </svg></label>
+            </div>
+            <!-- nav mobile -->
+            <ul id="navbar_list--mobile"></ul>
+            <script>
+                const navPC = document.querySelector("#navbar_list--pc")
+                const navMobile = document.querySelector("#navbar_list--mobile")
+                navMobile.innerHTML = navPC.innerHTML
+            </script>
+            <div class="separate">
+
+            </div>
+            <div class="show-on-mobile">
+                <h1><a href="../html/Signup.html" style="color: #cca336;">Đăng nhập</a></h1>
+                <button class="btn"><span>Giỏ hàng</span> <a href="#!"><i class="fa-solid fa-cart-shopping"
+                            style="color: #1e4b24;"></i></a></button>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <main>
+        <div class="container text-center my-4">
+            <h2 class="text-success fw-bold">SẢN PHẨM</h2>
+            <img src="../img/icon_tealeaves.png" alt="">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link category" href="../html/thucuong.html">VẬT TRANG TRÍ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link category" href="#">BÀN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link category" href="#">GHẾ</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/HungKing.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title ">Armchair Hung King</h5>
+                            <p class="card-text">2.000.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/SF044VF.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Armchair vải Dark SF044VF.I</h5>
+                            <p class="card-text">1.200.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/SF04.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Armchair vải màu vàng SF044J.IDS
+                            </h5>
+                            <p class="card-text">3.050.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/ban6cho.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn ăn 6 chỗ Coastal</h5>
+                            <p class="card-text">1.234.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/ban8cho.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn ăn 8 chỗ Coastal</h5>
+                            <p class="card-text">1.450.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/linet.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn bên Line Taupe MVT46T.I</h5>
+                            <p class="card-text">500.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn bên Tita Gold
+                            </h5>
+                            <p class="card-text">1.567.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/DA-XAY-NHO.png" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn bên Toni
+                            </h5>
+                            <p class="card-text">2.345.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn Console Janis</h5>
+                            <p class="card-text">666.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn đầu giường Coastal</h5>
+                            <p class="card-text">3.050.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn đầu giường Madame màu P67W</h5>
+                            <p class="card-text">550.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Tên sản phẩm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bàn kim loại vàng M</h5>
+                            <p class="card-text">900.000 đ</p>
+                            <a href="#" class="btn btn-order">ĐẶT HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>  
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="main-content">
+                <div class="body">
+                    <div class="box">
+                        <div class="info-end1">
+                            <div class="tieude">
+                                <h1>Giới thiệu</h1>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <a href="#!">Về Chúng Tôi</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Sản phẩm</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Khuyến mãi</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Tuyển dụng</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-end2">
+                            <div class="tieude">
+                                <h1>Điều khoản</h1>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    <a href="#!">Điều khoản sử dụng</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Chính sách bảo mật thông tin</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Hướng dẫn xuất hóa đơn GTGT</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-end3">
+                            <div class="tieude">
+                                <div class="icon"><i class="fa-solid fa-phone" style="color: #74C0FC;"></i></div>
+                                <h1> Đặt hàng: 0786012569</h1>
+                            </div>
+                            <div class="tieude2">
+                                <div class="icon"><i class="fa-solid fa-location-dot" style="color: #74C0FC;"></i></div>
+                                <h1>Liên hệ</h1>
+                            </div>
+                            <div class="info">
+                                <p>Tầng 1-3 HVH drinks</p>
+                                <p>12 Nguyễn Văn Bảo,P.4,</p>
+                                <p>Gò vấp, Thành phố Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="info-end4">
+                            <div class="title">
+                                <h1><a href="#!">HVH Drinks</a></h1>
+                            </div>
+                            <div class="icon">
+                                <div class="icon1"><a href="#!"><i class="fa-brands fa-facebook"
+                                            style="color: #fff;"></i></a></i></div>
+                                <div class="icon2"><a href="#!"><i class="fa-brands fa-square-instagram"
+                                            style="color: #fff;"></i></a></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

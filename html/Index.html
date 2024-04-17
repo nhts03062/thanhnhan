@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/Index.css">
+    <script src="../js/Index.js"></script>
+    <title>CỬA HÀNG NỘI THẤT IUH</title>
+</head>
+
+<body>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    // Biểu thức chính quy
+    const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const passwordRegex = /^.{6,20}$/;
+
+    // Lấy các phần tử trong form
+    const nameInput = document.querySelector('.sign-up input[type="text"]');
+    const emailInput = document.querySelector('.sign-up input[type="email"]');
+    const passwordInput = document.querySelector('.sign-up input[type="password"]');
+    const signUpForm = document.querySelector('.sign-up form');
+
+    // Hàm kiểm tra biểu thức chính quy
+    function validateInput(input, regex) {
+        return regex.test(input.value.trim());
+    }
+
+    // Sự kiện submit form
+    signUpForm.addEventListener('submit', function(event) {
+        // Ngăn chặn hành động mặc định của form
+        event.preventDefault();
+
+        // Kiểm tra tên
+        if (!nameInput.value.trim() || !validateInput(nameInput, nameRegex)) {
+            alert('Vui lòng nhập tên hợp lệ (tối thiểu 2 ký tự, không chứa ký tự đặc biệt)');
+            return;
+        }
+
+        // Kiểm tra email
+        if (!emailInput.value.trim() || !validateInput(emailInput, emailRegex)) {
+            alert('Vui lòng nhập địa chỉ email hợp lệ');
+            return;
+        }
+
+        // Kiểm tra mật khẩu
+        if (!passwordInput.value.trim() || !validateInput(passwordInput, passwordRegex)) {
+            alert('Vui lòng nhập mật khẩu từ 6 đến 20 ký tự');
+            return;
+        }
+
+        // Nếu tất cả thông tin hợp lệ, có thể submit form
+        signUpForm.submit();
+    });
+});
+
+
+</script>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Tạo tài khoản</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Hoặc sử dụng email của bạn để đăng ký</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Đăng ký</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Đăng nhập</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Hoặc sử dụng email của bạn</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Quên mật khẩu?</a>
+                <button>Đăng nhập</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Chào mừng quay trở lại!</h1>
+                    <p>Nhập thông tin cá nhân của bạn để sử dụng trang web nhé!</p>
+                    <button class="hidden" id="login">Đăng nhập</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Xin chào, Friend!</h1>
+                    <p>Đăng ký với thông tin cá nhân của bạn để sử dụng trang web nhé!</p>
+                    <button class="hidden" id="register">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

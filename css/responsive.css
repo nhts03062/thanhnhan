@@ -1,0 +1,267 @@
+/* PC */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+/* tablet & mobile */
+@media (max-width: 991.98px) {
+  .header {
+    position: relative;
+  }
+  .header .main-content {
+    height: 100px;
+  }
+  .head-bottom {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    top: -66px;
+    left: 60px;
+  }
+  .toggle-switch label {
+    position: absolute;
+    top: -66px;
+    left: 60px;
+    z-index: 2;
+  }
+  .header .main-content .login .btn {
+    position: absolute;
+    left: 237px;
+    width: 120px;
+    bottom: -38px;
+  }
+  .header .main-content .login h1 a {
+    position: absolute;
+    left: 132px;
+    bottom: -30px;
+    width: 100px;
+  }
+  .search {
+    position: absolute;
+    left: 425px;
+    bottom: 22px;
+  }
+  .logo {
+    position: absolute;
+    left: 293px;
+    bottom: -13px;
+  }
+  .menu-header_icon {
+    visibility: visible;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 53px;
+    left: 17px;
+    z-index: 1;
+    color: #f8e559;
+  }
+  .menu-overlay {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-drawer {
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, 0.95);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 60px;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .mobile-header a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  #navbar_list--mobile a:hover {
+    font-weight: 600px;
+    text-shadow: 1px 0px 0 currentColor;
+    background-color: #00ffff37;
+  }
+  .close_menu {
+    width: 24px;
+    color: black;
+  }
+  .menu-drawer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar_list--mobile {
+    margin-top: 25px;
+  }
+  .section_top {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .img1 {
+    width: 80%;
+    margin-left: -20px;
+    order: 1;
+  }
+  .info1 {
+    order: 2;
+  }
+  .section_bottom {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .img2 {
+    order: 1;
+    width: 80%;
+    margin-right: 66px;
+  }
+  .info2 {
+    order: 2;
+  }
+  .tieude h1 {
+    width: 185px;
+  }
+  footer .box {
+    gap: 40px;
+  }
+  .info-end4 .title h1 {
+    width: 189px;
+  }
+  .slide-show .list-images img {
+    width: 100%;
+  }
+  .circle1 {
+    left: 397px !important;
+  }
+  .circle2 {
+    left: 423px !important;
+  }
+
+  .circle4 {
+    right: 423px !important;
+  }
+  .circle5 {
+    right: 397px !important;
+  }
+  /* .drop-menu:hover ~ li{
+          visibility: hidden;
+          
+  } */
+  .drop-menu:hover + li{
+    
+    margin-top: 100px;
+}
+ 
+}
+/* tablet */
+@media (min-width: 786px) and (max-width: 991.98px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
+/* mobile */
+@media (max-width: 767.98px) {
+  .header .main-content .login {
+    display: none;
+  }
+  .menu-drawer {
+    padding: 0px;
+    inset: 0 50% 0 0;
+  }
+  .close_menu {
+    position: absolute;
+    top: 17px;
+    right: 36px;
+  }
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+  .show-on-mobile {
+    position: relative;
+  }
+  .show-on-mobile h1 {
+    position: absolute;
+    top: 8px;
+    left: 34px;
+  }
+  .show-on-mobile .btn {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 22px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .khoi-logo .logo {
+    position: absolute;
+    left: 90px;
+  }
+  .search {
+    position: absolute;
+    left: 207px;
+  }
+  .circle1 {
+    left: 160px !important;
+  }
+  .circle2 {
+    left: 182px !important;
+  }
+  .circle4 {
+    right: 182px !important;
+  }
+  .circle5 {
+    right: 160px !important;
+  }
+  .hero {
+    margin-top: -86px;
+  }
+  .img1 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  main .info .title {
+    width: 100% !important;
+  }
+  main .info .desc,
+  .desc--2 {
+    width: 100% !important;
+    font-size: 14px;
+  }
+  .section_top {
+    margin-top: 23px !important;
+  }
+  footer .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 16px;
+  }
+  .info-end4{
+    position: relative;
+  }
+  .info-end4 .title{
+        margin-bottom: 30px;
+  }
+  
+  .info-end4 .icon{
+    position: absolute;
+    top: 12px;
+  }
+}
